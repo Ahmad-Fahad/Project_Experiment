@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body><!DOCTYPE html>
+<html>
+
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p id="para">During discussion on President Arif Alvi’s address to the joint sitting of parliament, Senator Tahir Bizenjo recalled that under the Constitution, the president is supposed to be impartial. He regretted, however, that when Dr Alvi spoke in parliament, he was speaking as a member of the Pakistan Tehreek-i-Insaf (PTI).</p>
+
+
+
+<input type="text" name="" id="text-to-search">
+<button onclick="search()">Search</button>
+
+<p id="demo"></p>
+<p id="demo_in"></p>
+
+<script>
+function search() {
+  let search_text = document.getElementById("text-to-search").value;
+  let text 		= document.getElementById("para").innerHTML;
+  //let replaced  = text.replace(/is/gi, "----");
+ 	
+  search_text = search_text.replace(/[.*+^${}()[\]\\]/g, "\\$&");
+
+  document.getElementById("demo").innerHTML = text;
+  document.getElementById("demo_in").innerHTML = search_text;
+
+
+}
+</script>
+
+</body>
+</html>
+</body>
+</html>
